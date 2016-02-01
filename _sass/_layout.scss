@@ -111,6 +111,10 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    li .icon {
+        margin-right: 5px;
+    }
 }
 
 .footer-col-wrapper {
