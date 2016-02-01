@@ -1,0 +1,28 @@
+{
+  "name": "cphfront.com",
+  "version": "1.0.0",
+  "description": "Community website for Copenhagen Frontenders",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "svgo": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cphfront/cphfront.com.git"
+  },
+  "keywords": [
+    "frontenders",
+    "community",
+    "website"
+  ],
+  "author": "Kristian Andersen, Andreas Larsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cphfront/cphfront.com/issues"
+  },
+  "homepage": "https://github.com/cphfront/cphfront.com#readme"
+}
