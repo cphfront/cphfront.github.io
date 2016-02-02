@@ -1,9 +1,9 @@
 ---
 # Main sass file
 ---
-$line-height: 1.5;
 
 @import
+  "variables",
   "reset",
   "typography",
   "layout"

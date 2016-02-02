@@ -2,6 +2,19 @@ body {
   line-height: $line-height;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 1em;
   margin-top: $line-height*2 + rem;
+}
+html {
+  font-size: $min-font + rem;
+}
+@media (min-width: $min-font-media + rem) {
+  html {
+    font-size: calc(#{$min-font + rem} + (#{$max-font} - #{$min-font})* ((100vw - #{$min-font-media + rem})/(#{$max-font-media} - #{$min-font-media})))
+  }
+}
+@media (min-width: $max-font-media + rem) {
+  html {
+    font-size: $max-font + rem;
+  }
 }
