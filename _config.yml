@@ -17,3 +17,10 @@ github_username:  cphfront
 
 # Build settings
 markdown: kramdown
+
+gems:
+    - octopress-autoprefixer
+
+browserlist:
+    - Last 4 versions
+    - "> 5%"
