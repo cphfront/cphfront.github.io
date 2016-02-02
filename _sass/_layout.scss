@@ -1,5 +1,5 @@
 article {
-  max-width: 40rem;
-  margin: 0 auto;
-  margin-top: $line-height*2 + rem;
+  max-width: $max-font-media / $max-font + rem;
+  padding: 0 1rem;
+  margin: $line-height*2 + rem auto $line-height*4 + rem;
 }
