@@ -5,7 +5,7 @@ permalink: /
 ---
 
 ##Meetup
-We meet in Copenhagen every month on tuesdays, wednesdays or thursdays at 19.00 and have talks for 1½-2 hours with time inbetween and afterwards to chat with fellow developers.
+We meet in Copenhagen every month on tuesdays, wednesdays or thursdays at 19.00 and have talks for 1½-2 hours with time in-between and afterwards to chat with fellow developers.
 See our events and join our group on [meetup.com/cphfront](https://meetup.com/cphfront)
 
 
