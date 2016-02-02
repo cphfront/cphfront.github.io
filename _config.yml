@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cphfront.com" # the base hostname & protocol for your site
 twitter_username: cphfront
 github_username:  cphfront
+include: ['_pages']
 
 # Build settings
 markdown: kramdown
