@@ -1,9 +1,16 @@
 body {
   line-height: $line-height;
+  font-family: sans-serif;
+  color: $text-color;
+  @include type-fix();
 }
 h2 {
   font-size: 1em;
   margin-top: $line-height*2 + rem;
+}
+a {
+  color: $link-color;
+  text-decoration: none;
 }
 html {
   font-size: $min-font + rem;
