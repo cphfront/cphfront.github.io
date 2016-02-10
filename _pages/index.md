@@ -4,9 +4,12 @@ title: Home
 permalink: /
 ---
 
+
+We`re a community of 684 frontend developeres in Copenhagen. We share thoughts, ideas and experiences.
+
 ##Meetup
-We meet in Copenhagen every month on tuesdays, wednesdays or thursdays at 19.00 and have talks for 1½-2 hours with time in-between and afterwards to chat with fellow developers.
-See our events and join our group on [meetup.com/cphfront](https://meetup.com/cphfront)
+We meet in Copenhagen every month and have talks for 1½-2 hours with time in-between and afterwards to chat with fellow developers.
+See our events and join our group on [meetup.com/cphfront](http://www.meetup.com/cphfront/)
 
 
 ##Updates
