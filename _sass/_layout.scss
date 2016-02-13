@@ -1,5 +1,11 @@
-article, header {
-  max-width: $max-font-media / $max-font + rem;
-  padding: 0 1rem;
-  margin: $line-height*2 + rem auto $line-height*4 + rem;
+article,
+header {
+  max-width: $max-font-media - $body-padding;
+  padding  : 0 $body-padding;
+  margin   : $line-height*2 auto $line-height*4;
+}
+
+nav {
+  display        : flex;
+  justify-content: space-around;
 }

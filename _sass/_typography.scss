@@ -1,27 +1,75 @@
+$min: strip-unit($min-font);
+$max: strip-unit($max-font);
+$max-media: strip-unit($max-font-media);
+$min-media: strip-unit($min-font-media);
+
+@font-face {
+  font-family: 'cph.front';
+  src        : url('fonts/cph.frontenders-light.eot');
+  src        : url('fonts/cph.frontenders-light.eot?#iefix') format('embedded-opentype'), url('fonts/cph.frontenders-light.woff2') format('woff2'), url('fonts/cph.frontenders-light.woff') format('woff'), url('fonts/cph.frontenders-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style : normal;
+
+}
+
+@font-face {
+  font-family: 'source.front';
+  src        : url('fonts/sourcecodepro-semibold.eot');
+  src        : url('fonts/sourcecodepro-semibold.eot?#iefix') format('embedded-opentype'), url('fonts/sourcecodepro-semibold.woff2') format('woff2'), url('fonts/sourcecodepro-semibold.woff') format('woff'), url('fonts/sourcecodepro-semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style : normal;
+}
+
 body {
   line-height: $line-height;
-  font-family: sans-serif;
-  color: $text-color;
-  @include type-fix();
+  font-family: 'cph.front', monospace;
+  font-weight: 300;
+  color      : $text-color;
 }
+
+h1,
 h2 {
-  font-size: 1em;
-  margin-top: $line-height*2 + rem;
+  font-family   : 'source.front', monospace;
+  font-weight   : 600;
+  letter-spacing: -0.05em;
 }
+
+h1 {
+  line-height  : $line-height * 2;
+  margin-bottom: $line-height;
+  text-align   : center;
+  font-size    : 2.6rem;
+}
+
+h2 {
+  font-size  : 1.4rem;
+  transform  : translateY(-0.2rem) translateX(-0.05rem);
+  padding-top: $line-height;
+}
+
+p {
+  letter-spacing: -0.05em;
+  padding-bottom: $line-height;
+}
+
 a {
-  color: $link-color;
+  color          : $link-color;
   text-decoration: none;
 }
+
+// Responsive fontsize
 html {
-  font-size: $min-font + rem;
+  font-size: $min-font;
 }
-@media (min-width: $min-font-media + rem) {
+
+@media (min-width: $min-font-media) {
   html {
-    font-size: calc(#{$min-font + rem} + (#{$max-font} - #{$min-font})* ((100vw - #{$min-font-media + rem})/(#{$max-font-media} - #{$min-font-media})))
+    font-size: calc(#{$min-font} + (#{$max} - #{$min}) * ( (100vw - #{$min-font-media}) / (#{$max-media} - #{$min-media}) ) );
   }
 }
-@media (min-width: $max-font-media + rem) {
+
+@media (min-width: $max-font-media) {
   html {
-    font-size: $max-font + rem;
+    font-size: $max-font;
   }
 }
