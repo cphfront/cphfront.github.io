@@ -5,10 +5,10 @@ permalink: /
 ---
 
 
-We`re a community of 684 frontend developeres in Copenhagen. We share thoughts, ideas and experiences.
+We`re a community of ~700 frontend developers in Copenhagen.
 
 ##Meetup
-We meet in Copenhagen every month and have talks for 1½-2 hours with time in-between and afterwards to chat with fellow developers.
+We meet in Copenhagen every month and have talks for 1½-2 hours with time in-between and afterwards to chat with fellow developers. It's where we share our knowledge, ideas and experiences.  
 See our events and join our group on [meetup.com/cphfront](http://www.meetup.com/cphfront/)
 
 
@@ -17,7 +17,7 @@ Follow [@cphfront](https://twitter.com/cphfront) for updates.
 
 
 ##Hosts
-Hosting a meetup is a great oportunity for your company or organisation to get in touch with the finest frontend developers in Copenhagen. You can find more info in the guide for hosts.
+Hosting a meetup is a great opportunity for your company or organisation to get in touch with the finest frontend developers in Copenhagen. You can find more info in the guide for hosts.
 
 
 ##Speakers
