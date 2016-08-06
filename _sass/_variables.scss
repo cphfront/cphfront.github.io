@@ -1,13 +1,21 @@
 // Typography
-$line-height   : 1.5rem;
+$line-height   : 1.6rem;
 $min-font      : .875em;
 $max-font      : 1.25em;
 $min-font-media: 20em;
-$max-font-media: 40em;
+$max-font-media: 32em;
 
 // Layout
 $body-padding  : 1em;
 
 // Colors
 $text-color    : hsl(210, 3%, 33%);
-$link-color    : hsl(210, 75%, 50%);
+$brand-color   : hsl(164, 42%, 63%);
+$link-color    : darken(saturate($brand-color, 100%), 25%);
+
+// Gradient
+$gradient: linear-gradient(
+  to right bottom,
+  hsl(187, 55%, 63%),
+  hsl(134, 40%, 63%)
+);

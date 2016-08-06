@@ -3,58 +3,53 @@ $max: strip-unit($max-font);
 $max-media: strip-unit($max-font-media);
 $min-media: strip-unit($min-font-media);
 
-@font-face {
-  font-family: 'cph.front';
-  src        : url('fonts/cph.frontenders-light.eot');
-  src        : url('fonts/cph.frontenders-light.eot?#iefix') format('embedded-opentype'), url('fonts/cph.frontenders-light.woff2') format('woff2'), url('fonts/cph.frontenders-light.woff') format('woff'), url('fonts/cph.frontenders-light.ttf') format('truetype');
-  font-weight: normal;
-  font-style : normal;
-
-}
-
-@font-face {
-  font-family: 'source.front';
-  src        : url('fonts/sourcecodepro-semibold.eot');
-  src        : url('fonts/sourcecodepro-semibold.eot?#iefix') format('embedded-opentype'), url('fonts/sourcecodepro-semibold.woff2') format('woff2'), url('fonts/sourcecodepro-semibold.woff') format('woff'), url('fonts/sourcecodepro-semibold.ttf') format('truetype');
-  font-weight: normal;
-  font-style : normal;
-}
-
 body {
   line-height: $line-height;
-  font-family: 'cph.front', monospace;
-  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 200;
   color      : $text-color;
+  letter-spacing: .02em;
+  font-feature-settings: "tnum" 1, "kern" 1, "liga" 1;
 }
 
 h1,
 h2 {
-  font-family   : 'source.front', monospace;
-  font-weight   : 600;
-  letter-spacing: -0.05em;
-}
-
-h1 {
-  line-height  : $line-height * 2;
-  margin-bottom: $line-height;
-  text-align   : center;
-  font-size    : 2.6rem;
+  font-weight   : 700;
 }
 
 h2 {
   font-size  : 1.4rem;
   transform  : translateY(-0.2rem) translateX(-0.05rem);
-  padding-top: $line-height;
-}
-
-p {
-  letter-spacing: -0.05em;
-  padding-bottom: $line-height;
+  padding-top: $line-height * 2;
 }
 
 a {
   color          : $link-color;
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  &::before {
+    content: '';
+    background-color: currentColor;
+    opacity: 0.5;
+    border-radius: 50%;
+    width: $body-padding / 4;
+    height: $body-padding / 4;
+    margin-left: -$body-padding * 3 / 5;
+    margin-right: $body-padding * (3 / 5 - 1 / 4);
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+::selection {
+  color: white;
+  background: $brand-color;
 }
 
 // Responsive fontsize

@@ -1,0 +1,53 @@
+header {
+  align-items: center;
+  background: url('/img/cphfront.jpg'), $gradient;
+  background-blend-mode: darken;
+  background-position: 50% 50%;
+  background-size: cover;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+  color: white;
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  max-height: 70vw;
+  position: relative;
+
+
+  &:before {
+    content: '';
+    background: $gradient;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  div {
+    z-index: 1;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    // because svg max-width needs to work
+    font-size: 1rem;
+  }
+
+  h2 {
+    padding-top: 0.5rem;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  svg {
+    fill: currentColor;
+    width: 60vw;
+    height: 60vw * 146 / 540;
+    max-width: $max-font-media - $body-padding * 2;
+    max-height: $max-font-media * 146 / 560;
+  }
+}

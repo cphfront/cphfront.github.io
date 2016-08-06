@@ -20,11 +20,3 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
-/**
- * Cross browser type consistency
- */
-article {
-  -webkit-font-smoothing : antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}

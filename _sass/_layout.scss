@@ -1,6 +1,5 @@
-article,
-header {
-  max-width: $max-font-media - $body-padding;
+article {
+  max-width: $max-font-media;
   padding  : 0 $body-padding;
   margin   : $line-height*2 auto $line-height*4;
 }
