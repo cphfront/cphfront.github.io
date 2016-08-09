@@ -11,7 +11,7 @@ We meet every month and have talks for 1½-2 hours with time to chat with fellow
 
 
 ##Hosts
-Hosting a meetup is a great opportunity for your company or organisation to get in touch with the finest frontend developers in Copenhagen. Read more in [info for hosts](hosting).
+Hosting a meetup is a great opportunity for your company or organisation to get in touch with the finest frontend developers in Copenhagen. Read more in [info for hosts](/hosting.html).
 
 
 ##Speakers
