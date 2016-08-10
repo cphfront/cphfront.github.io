@@ -5,27 +5,41 @@ $min-media: strip-unit($min-font-media);
 
 body {
   line-height: $line-height;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 200;
-  color      : $text-color;
-  letter-spacing: .02em;
-  font-feature-settings: "tnum" 1, "kern" 1, "liga" 1;
+  font-family: 'Fira Mono', monospace;
+  font-weight: 400;
+  color: $text-color;
+  letter-spacing: -.04em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-size: 1rem;
 }
 
 h1,
-h2 {
-  font-weight   : 700;
+h2,
+.lead {
+  font-weight: 700;
 }
 
-h2 {
-  font-size  : 1.4rem;
-  transform  : translateY(-0.2rem) translateX(-0.05rem);
-  padding-top: $line-height * 2;
+.lead {
+  font-size: 1.35rem;
+  letter-spacing: 0;
 }
 
-a {
-  color          : $link-color;
+p, ul {
+  padding-bottom: $line-height;
+}
+
+article a {
+  color: inherit;
   text-decoration: none;
+  border-bottom: 2px solid rgba($link-color, 0.5);
+
+  &:hover, &:focus {
+    border-bottom-color: $link-color;
+  }
 }
 
 ul {
@@ -36,7 +50,7 @@ li {
   &::before {
     content: '';
     background-color: currentColor;
-    opacity: 0.5;
+    opacity: .5;
     border-radius: 50%;
     width: $body-padding / 4;
     height: $body-padding / 4;
@@ -49,7 +63,7 @@ li {
 
 ::selection {
   color: white;
-  background: $brand-color;
+  background: darken($text-color, 10%);
 }
 
 // Responsive fontsize
